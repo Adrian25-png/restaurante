@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sabor Prime</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- FONTES MODERNAS -->
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- INTRO ANIMATION -->
+
+<div id="intro">
+<h1>Sabor Prime</h1>
+</div>
+
+<header class="topo">
+
+<h2>Sabor Prime</h2>
+
+<input type="text" placeholder="Buscar no cardápio..." class="busca">
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay">
+
+<h1>Experiência Gastronômica</h1>
+<p>Sabores exclusivos preparados por chefs</p>
+
+<button>Ver Cardápio</button>
+
+</div>
+
+</section>
+
+<!-- POPULARES -->
+
+<section class="populares fade">
+
+<h2>Mais pedidos</h2>
+
+<div class="scroll">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80">
+<h3>Hambúrguer Premium</h3>
+<p>R$ 39,90</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=500&q=80">
+<h3>Pizza Artesanal</h3>
+<p>R$ 49,90</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=500&q=80">
+<h3>Sobremesa Gourmet</h3>
+<p>R$ 22,90</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CATEGORIAS -->
+
+<section class="categorias fade">
+
+<h2>Categorias</h2>
+
+<div class="grid">
+
+<a href="#lanches" class="categoria">🍔 Lanches</a>
+<a href="#pizzas" class="categoria">🍕 Pizzas</a>
+<a href="#almoco" class="categoria">🍛 Almoço</a>
+<a href="#cafe" class="categoria">☕ Café da manhã</a>
+<a href="#bebidas" class="categoria">🥤 Bebidas</a>
+<a href="#sobremesas" class="categoria">🍰 Sobremesas</a>
+
+</div>
+
+</section>
+
+<!-- LANCHES -->
+
+<section id="lanches" class="menu-section">
+
+<h2>🍔 Lanches</h2>
+
+<div class="menu-grid">
+
+    <div class="menu-item">
+
+        <img src="https://padariabrasileira.com.br/wp-content/uploads/2020/05/padariabrasileira_x-burger_zm_sp_native-scaled.jpg?auto=format&fit=crop&w=500&q=80">
+        
+        <h3>X-Burger</h3>
+        <p>Pão, carne e queijo</p>
+        <span>R$ 18,90</span>
+        
+        <button onclick="addPedido('X-Burger',18.9)">Adicionar</button>
+        
+    </div>
+        
+        
+    <div class="menu-item">
+        
+        <img src="https://www.sadia.com.br/assets/images/_/recipes/156865d1458cb070f06218cd0ecbea1adac7fb35.webp?auto=format&fit=crop&w=500&q=80">
+        
+        <h3>X-Bacon</h3>
+        <p>Hambúrguer com bacon crocante</p>
+        <span>R$ 24,90</span>
+        
+        <button onclick="addPedido('X-Bacon',24.9)">Adicionar</button>
+        
+    </div>
+        
+        
+    <div class="menu-item">
+        
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=500&q=80">
+        
+        <h3>X-Salada</h3>
+        <p>Hambúrguer com alface e tomate</p>
+        <span>R$ 21,90</span>
+        
+        <button onclick="addPedido('X-Salada',21.9)">Adicionar</button>
+        
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- PIZZAS -->
+
+<section id="pizzas" class="menu-section">
+
+<h2>🍕 Pizzas</h2>
+
+<div class="menu-grid">
+
+    <div class="menu-item">
+
+        <img src="https://www.perdigao.com.br/assets/_images/477b0c1ef4d31294f77af38ad961970650cc2c00.webp?auto=format&fit=crop&w=500&q=80">
+        
+        <h3>Pizza Calabresa</h3>
+        <p>Calabresa e cebola</p>
+        <span>R$ 42,90</span>
+        
+        <button onclick="addPedido('Pizza Calabresa',42.9)">Adicionar</button>
+        
+    </div>
+        
+        
+    <div class="menu-item">
+        
+        <img src="https://safrescobaldistatic.blob.core.windows.net/media/2022/11/PIZZA-MARGHERITA.jpg?auto=format&fit=crop&w=500&q=80">
+        
+        <h3>Pizza Margherita</h3>
+        <p>Muçarela e manjericão</p>
+        <span>R$ 39,90</span>
+        
+        <button onclick="addPedido('Pizza Margherita',39.9)">Adicionar</button>
+        
+    </div>
+        
+        
+    <div class="menu-item">
+        
+        <img src="https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d036cd01122da62bf581784f52d99b3a.jpg?auto=format&fit=crop&w=500&q=80">
+        
+        <h3>Pizza 4 Queijos</h3>
+        <p>Mistura de queijos especiais</p>
+        <span>R$ 49,90</span>
+        
+        <button onclick="addPedido('Pizza 4 Queijos',49.9)">Adicionar</button>
+        
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ALMOÇO -->
+
+<section id="almoco" class="menu-section">
+
+<h2>🍛 Almoço</h2>
+
+<div class="menu-grid">
+
+    <div class="menu-item">
+
+        <img src="https://blog-parceiros.ifood.com.br/wp-content/uploads/2022/08/prato-executivo.jpg?auto=format&fit=crop&w=500&q=80">
+        
+        <h3>Prato Executivo</h3>
+        <p>Arroz, feijão, carne e salada</p>
+        <span>R$ 24,90</span>
+        
+        <button onclick="addPedido('Prato Executivo',24.9)">Adicionar</button>
+        
+    </div>
+        
+        
+    <div class="menu-item">
+        
+        <img src="https://catracalivre.com.br/wp-content/uploads/2023/10/peito-frango-grelhado.jpg?auto=format&fit=crop&w=500&q=80">
+        
+        <h3>Frango Grelhado</h3>
+        <p>Frango com arroz e legumes</p>
+        <span>R$ 26,90</span>
+        
+        <button onclick="addPedido('Frango Grelhado',26.9)">Adicionar</button>
+        
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- CAFÉ DA MANHÃ -->
+
+<section id="cafe" class="menu-section">
+
+    <h2>☕ Café da manhã</h2>
+    
+    <div class="menu-grid">
+    
+        <div class="menu-item">
+
+            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=500&q=80">
+            
+            <h3>Café Completo</h3>
+            <p>Pão, café e frutas</p>
+            <span>R$ 15,90</span>
+            
+            <button onclick="addPedido('Café Completo',15.9)">Adicionar</button>
+            
+        </div>
+            
+            
+        <div class="menu-item">
+            
+            <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=500&q=80">
+            
+            <h3>Pão com Ovo</h3>
+            <p>Pão francês com ovo</p>
+            <span>R$ 9,90</span>
+            
+            <button onclick="addPedido('Pão com Ovo',9.9)">Adicionar</button>
+            
+        </div>
+    
+    </div>
+    
+    </section>
+
+
+<!-- BEBIDAS -->
+
+<section id="bebidas" class="menu-section">
+
+<h2>🥤 Bebidas</h2>
+
+<div class="menu-grid">
+
+    <div class="menu-item">
+
+        <img src="https://impalpavel.wordpress.com/wp-content/uploads/2016/03/suco-natural-maracuja.jpg?auto=format&fit=crop&w=500&q=80">
+        
+        <h3>Suco Natural</h3>
+        <p>Laranja ou maracujá</p>
+        <span>R$ 8,00</span>
+        
+        <button onclick="addPedido('Suco Natural',8)">Adicionar</button>
+        
+    </div>
+        
+        
+    <div class="menu-item">
+        
+        <img src="https://as2.ftcdn.net/jpg/04/80/18/45/1000_F_480184506_wnsrRWlNGyEdfV1l3R5UvK3iqWUBspZV.jpg?auto=format&fit=crop&w=500&q=80">
+        
+        <h3>Milkshake</h3>
+        <p>Chocolate ou morango</p>
+        <span>R$ 15,90</span>
+        
+        <button onclick="addPedido('Milkshake',15.9)">Adicionar</button>
+        
+    </div>
+
+</div>
+
+</section>
+
+<!-- SOBREMESA -->
+
+<section id="sobremesas" class="menu-section">
+
+    <h2>🍰 Sobremesas</h2>
+    
+    <div class="menu-grid">
+    
+        <div class="menu-item">
+
+            <img src="https://bakeandcakegourmet.com.br/uploads/site/receitas/cheesecake-de-frutas-vermelhas-wvd7kw62.jpg?auto=format&fit=crop&w=500&q=80">
+            
+            <h3>Cheesecake</h3>
+            <p>Com frutas vermelhas</p>
+            <span>R$ 19,90</span>
+            
+            <button onclick="addPedido('Cheesecake',19.9)">Adicionar</button>
+            
+        </div>
+            
+            
+        <div class="menu-item">
+            
+            <img src="https://s04.video.glbimg.com/x720/13097763.jpg?auto=format&fit=crop&w=500&q=80">
+            
+            <h3>Brownie</h3>
+            <p>Brownie com chocolate</p>
+            <span>R$ 14,90</span>
+            
+            <button onclick="addPedido('Brownie',14.9)">Adicionar</button>
+            
+        </div>
+    
+    </section>
+
+
+<div class="carrinho">
+
+<h3>🛒 Pedido</h3>
+
+<ul id="listaPedidos"></ul>
+
+<p id="totalPedido">Total: R$ 0</p>
+
+<button onclick="enviarPedido()">Enviar Pedido</button>
+
+</div>
+ 
+<script src="script.js"></script>
+
+</body>
+</html>
